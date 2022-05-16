@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belly Button Biodiversity</title>
+  <link 
+    rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link 
+  rel ="stylesheet" 
+  href="static/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 jumbotron text-center" style="background-image: url('https://jooinn.com/images/bacteria-15.jpg');
+      background-size: cover; background-position: center; color: rgb(187, 180, 227)">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Cultivating Cultures</h3>
+        </div>
+        <div class="col-md-8">
+          <p>
+          Using Scientific Ingenuity, Improbable Beef has undertaken the task of cultivating proteins for synthetic beef from volunteers' navels. 
+          If Improbable Beef succeeds in this endeavor, this website will allow the company to locate those volunteers whose navels  
+          featured the proteins that will need to be synthesized and manufactured. 
+          <p>
+        </div>
+      </div>
+    
+    <div class="row">
+      <div class="col-md-2">
+          <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      
+      <div class="col-md-5 jumbotron text-center" style="background-color: rgb(95, 102, 232);">
+        <div id="bar"></div>
+        <p>
+          This Bar Chart illustrates the top 10 bacterial Cultures featured in the specified volunteer. 
+          <p>
+      </div>
+      <div class="col-md-5 jumbotron text-center" style="background-color: rgb(95, 102, 232);">
+        <div id="gauge"></div>
+        <p>
+          This Gauge displays the approximate weekly belly button washing frequency of a specified volunteer.
+          <p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center" style="background-color: rgb(95, 102, 232);"></div>
+        <div id="bubble"></div>
+        <p>
+          This Bubble Chart proportionally depicts the bacteria count of each culture based on a specified volunteer.
+          <p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+
+
+</body>
+
+</html>
