@@ -133,5 +133,64 @@ Once again, after establishing these variables, we need only use our trace and l
     }
 ### Deluvarble 4: Customization
 
+While completing these three charts presents potential visitors with a user-friendly interface; the interface itself remained plain and ordinary. As a result, using our knowledge of HTML and CSS, we endeavored to customize the website in the following ways:
+
+* Bacterial Image Added to Jumbotron & Change in Font Color
+
+      <div class="col-xs-12 col-sm-12 col-md-12 jumbotron text-center" style="background-image: url('https://jooinn.com/images/bacteria-15.jpg');
+      background-size: cover; background-position: center; color: rgb(187, 180, 227)">
+      
+* Project Overview Added
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Cultivating Cultures</h3>
+                  </div>
+                  <div class="col-md-8">
+                    <p>
+                    Using Scientific Ingenuity, Improbable Beef has undertaken the task of cultivating proteins for synthetic beef from volunteers' navels. 
+                    If Improbable Beef succeeds in this endeavor, this website will allow the company to locate those volunteers whose navels  
+                    featured the proteins that will need to be synthesized and manufactured. 
+                    <p>
+             </div>
+          </div>
+   
+  * Overviews of Each Graph Added
+
+        <div class="col-md-5 jumbotron text-center" style="background-color: rgb(95, 102, 232);">
+            <div id="bar"></div>
+                <p>
+                This Bar Chart illustrates the top 10 bacterial Cultures featured in the specified volunteer. 
+                <p>
+            </div>
+        <div class="col-md-5 jumbotron text-center" style="background-color: rgb(95, 102, 232);">
+            <div id="gauge"></div>
+                <p>
+                This Gauge displays the approximate weekly belly button washing frequency of a specified volunteer.
+                <p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 jumbotron text-center" style="background-color: rgb(95, 102, 232);"></div>
+                <div id="bubble"></div>
+                <p>
+                This Bubble Chart proportionally depicts the bacteria count of each culture based on a specified volunteer.
+                <p>
+            </div>
+        </div>
+
+* Additional Colors Added Via CSS
+
+        body {
+
+            color: #000000;
+            background-color: #578ee1;
+        }
+
+        p {
+            color: rgb(209, 220, 236);
+        }
+
 
 ## Analysis
