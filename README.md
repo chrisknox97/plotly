@@ -88,12 +88,51 @@ Then, with the groundwork already laid with Deliverable 1, all we needed to do w
         showlegend: false
       };  
       
-This data is once again plotted and displayed using Plotly functionality. 
+This data is once again plotted and displayed using ``Plotly`` functionality. 
 
        Plotly.newPlot("bubble", bubbleData, bubbleLayout);  
 
 ### Deliverable 3: Gauge Counter
 
+The third deliverable required the creation of a gauge counter that would display the approximate times a volunteer washed their belly button each week. To do this we first had to create variables that would filter based on specified sample data numbers within the metadata array, one that would hold the first sample within that array, and a variable for washing frequency. 
+
+        var metadata = data.metadata;
+        var gaugeArray = metadata.filter(data => data.id == sample);
+        
+        var firstGauge = gaugeArray[0];
+        
+        var washfreq = firstGauge.wfreq
+        console.log(washfreq)
+        
+Once again, after establishing these variables, we need only use our trace and lyout to specify our data and titles, and Plotly to plot and display our new chart. 
+
+        var gaugeData = [
+        {
+            value: washfreq,
+            title: { text: '<b> Bully Button Washing Frequency <b> <br><br> Scrubs Per Week'},
+            type: 'indicator',
+            mode: 'gauge+number',
+            gauge: {
+            axis: { range: [null, 10], tickwidth: 1, tickcolor: "black" },
+            bar: {color: 'black'},
+            steps: [
+                {range: [0, 2], color: 'red'},
+                {range: [2, 4], color: 'orange'},
+                {range: [4, 6], color: 'yellow'},
+                {range: [6, 8], color: 'lightgreen'},
+                {range: [8, 10], color: 'green'},
+            ]
+            }
+            }
+        ];
+        
+            var gaugeLayout = { 
+                automargin: true,  
+            };
+
+        Plotly.newPlot("gauge", gaugeData, gaugeLayout);
+        });
+    }
 ### Deluvarble 4: Customization
 
 
