@@ -183,7 +183,6 @@ While completing these three charts presents potential visitors with a user-frie
 * Additional Colors Added Via CSS
 
         body {
-
             color: #000000;
             background-color: #578ee1;
         }
@@ -194,3 +193,6 @@ While completing these three charts presents potential visitors with a user-frie
 
 
 ## Analysis
+
+Ultimately ``Plotly`` presents a rather user-intuitive method to create Bar Charts, Bubble Charts, and/or Gauge counters for a HTML-based website; representing a viable alternative to ``Matplotlib``. 
+
