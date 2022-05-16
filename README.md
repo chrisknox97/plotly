@@ -136,7 +136,7 @@ Once again, after establishing these variables, we need only use our trace and l
         });
     }
     
-![Deliverable3](https://github.com/chrisknox97/plotly/blob/main/PNG/gauge.png)  
+<img align="right" src="https://github.com/chrisknox97/plotly/blob/main/PNG/gauge.png">
 
 ### Deluvarble 4: Customization
 
