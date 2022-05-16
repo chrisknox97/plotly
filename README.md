@@ -166,7 +166,7 @@ While completing these three charts presents potential visitors with a user-frie
    
   * Overviews of Each Graph Added
 
-<img align="right" src="https://github.com/chrisknox97/plotly/blob/main/PNG/overviews.png">  
+ ![Deliverable4C](ttps://github.com/chrisknox97/plotly/blob/main/PNG/overviews.png)
 
         <div class="col-md-5 jumbotron text-center" style="background-color: rgb(95, 102, 232);">
             <div id="bar"></div>
