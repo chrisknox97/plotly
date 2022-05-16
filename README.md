@@ -53,6 +53,8 @@ We then create the foundations of our Bar Chart by dictating its data values, or
 With everything else in place, all that's left is to use ``Plotly`` to plot the data. 
 
     Plotly.newPlot("bar", barData, barLayout);
+    
+![Deliverable1](https://github.com/chrisknox97/plotly/blob/main/PNG/barchart.png)
 
 ### Deliverable 2: Bubble Chart
 
@@ -91,6 +93,8 @@ Then, with the groundwork already laid with Deliverable 1, all we needed to do w
 This data is once again plotted and displayed using ``Plotly`` functionality. 
 
        Plotly.newPlot("bubble", bubbleData, bubbleLayout);  
+       
+![Deliverable2](https://github.com/chrisknox97/plotly/blob/main/PNG/bubblechart.png)  
 
 ### Deliverable 3: Gauge Counter
 
@@ -131,6 +135,9 @@ Once again, after establishing these variables, we need only use our trace and l
         Plotly.newPlot("gauge", gaugeData, gaugeLayout);
         });
     }
+    
+![Deliverable3](https://github.com/chrisknox97/plotly/blob/main/PNG/gauge.png)  
+
 ### Deluvarble 4: Customization
 
 While completing these three charts presents potential visitors with a user-friendly interface; the interface itself remained plain and ordinary. As a result, using our knowledge of HTML and CSS, we endeavored to customize the website in the following ways:
