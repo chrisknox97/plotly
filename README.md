@@ -9,13 +9,13 @@
 
 ### Delivarble 1: Bar Chart
 
-The first chart we created for this website was a Bar Chart that showed the visitor the Top 10 Bacterial Cultures found in any specified volunteer. To do this we first created a buildCharts function and used d3.json to load and retrieve the samples.json file where our data is stored. 
+The first chart we created for this website was a Bar Chart that showed the visitor the Top 10 Bacterial Cultures found in any specified volunteer. To do this we first created a ``buildCharts`` function and used ``d3.json`` to load and retrieve the ``samples.json`` file where our data is stored. 
 
     function buildCharts(sample) {
     
       d3.json("samples.json").then((data) => {
 
-From here we created variables to hold our sample array, to filter based on specified sample number, to hold the first sample in our array, and variables to hold the otu_ids, otu_labels, and sample_values. 
+From here we created variables to hold our sample array, to filter based on specified sample number, to hold the first sample in our array, and variables to hold the ``otu_ids``, ``otu_labels``, and s``ample_values``. 
 
       var samples = data.samples;
       
@@ -27,12 +27,12 @@ From here we created variables to hold our sample array, to filter based on spec
       var barLabels = result.otu_labels.slice(0,10).reverse()
       var barValues = result.sample_values.slice(0,10).reverse()
       
-After establishing our variables, we must then establish our yticks for our bar chart. 
+After establishing our variables, we must then establish our ``yticks`` for our Bar Chart. 
 
       var yticks = barIds.map(sampleObj => "OTU " + sampleObj).slice(0.10).reverse()
       console.log(yticks)
 
-We then create the foundations of our Bar Chart by dictating its data values, orientation, and type in its trace; as well as displaying its titles in its layout. 
+We then create the foundations of our Bar Chart by dictating its data values, orientation, and type in its ``trace``; as well as displaying its titles in its ``layout``. 
 
       var barData = [
       {
@@ -50,7 +50,7 @@ We then create the foundations of our Bar Chart by dictating its data values, or
         yaxis: { title: "OTU IDs" }
     }; 
 
-With everything else in place, all that's left is to use Plotly to plot the data. 
+With everything else in place, all that's left is to use ``Plotly`` to plot the data. 
 
     Plotly.newPlot("bar", barData, barLayout);
 
