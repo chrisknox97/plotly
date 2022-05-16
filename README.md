@@ -204,5 +204,5 @@ While completing these three charts presents potential visitors with a user-frie
 
 ## Analysis
 
-Ultimately ``Plotly`` presents a rather user-intuitive method to create Bar Charts, Bubble Charts, and/or Gauge counters for a HTML-based website; representing a viable alternative to ``Matplotlib``. 
+Ultimately through this assignment it became rather clear that ``Plotly`` presents a rather user-intuitive method to create Bar Charts, Bubble Charts, and/or Gauge counters for HTML-based websites. Its ease of use and accesibility means it represents a viable alternative to ``Matplotlib`` as well as another tool for aspiring developers and programmers. 
 
