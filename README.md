@@ -7,7 +7,7 @@
 
 ## Creating Plotly Charts
 
-### Delivarble 1: Bar Chart
+### Deliverable 1: Bar Chart
 
 The first chart we created for this website was a Bar Chart that showed the visitor the Top 10 Bacterial Cultures found in any specified volunteer. To do this we first created a ``buildCharts`` function and used ``d3.json`` to load and retrieve the ``samples.json`` file where our data is stored. 
 
@@ -15,7 +15,7 @@ The first chart we created for this website was a Bar Chart that showed the visi
     
       d3.json("samples.json").then((data) => {
 
-From here we created variables to hold our sample array, to filter based on specified sample number, to hold the first sample in our array, and variables to hold the ``otu_ids``, ``otu_labels``, and s``ample_values``. 
+From here we created variables to hold our sample array, to filter based on specified sample number, to hold the first sample in our array, and variables to hold the ``otu_ids``, ``otu_labels``, and ``sample_values`` (which also had to specify to display only the top 10 bacterial cultures found).
 
       var samples = data.samples;
       
@@ -55,6 +55,42 @@ With everything else in place, all that's left is to use ``Plotly`` to plot the 
     Plotly.newPlot("bar", barData, barLayout);
 
 ### Deliverable 2: Bubble Chart
+
+Our second task was to create a Bubble Chart displaying the proportional represenation of bacterial cultures in any given volunteer. To do this we first had to reastablish our ``otu_ids``, ``otu_labels``, and ``sample_values`` variables for all relevant data rather than just the top 10 most prominent. 
+
+    var ids = result.otu_ids
+    var labels = result.otu_labels
+    var values = result.sample_values
+    
+Then, with the groundwork already laid with Deliverable 1, all we needed to do was create another trace specifying x and y values, mode and marker as well as a layout with appropriate titles and margins. 
+
+    var bubbleData = [
+    {
+          x: ids,
+          y: values,
+          text: labels,
+          mode: 'markers',
+          marker: {
+            size: values,
+            color: ids,
+            colorscale: 'ice'
+          }
+        }
+      ];
+      
+      var bubbleLayout = {
+  
+        title: 'Bacteria Cultures Per Sample',
+        xaxis: { title: "OTU ID "},  
+        yaxis: { title: "Sample Values"},  
+        automargin: true,
+        hovermode: 'closest',   
+        showlegend: false
+      };  
+      
+This data is once again plotted and displayed using Plotly functionality. 
+
+       Plotly.newPlot("bubble", bubbleData, bubbleLayout);  
 
 ### Deliverable 3: Gauge Counter
 
