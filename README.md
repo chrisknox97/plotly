@@ -148,8 +148,6 @@ While completing these three charts presents potential visitors with a user-frie
       
 * Project Overview Added
 
-<img align="right" src="https://github.com/chrisknox97/plotly/blob/main/PNG/project_overview.png">
-
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4">
@@ -164,8 +162,11 @@ While completing these three charts presents potential visitors with a user-frie
              </div>
           </div>
           
+  ![Deliverable4B](https://github.com/chrisknox97/plotly/blob/main/PNG/project_overview.png) 
    
   * Overviews of Each Graph Added
+
+<img align="right" src="https://github.com/chrisknox97/plotly/blob/main/PNG/overviews.png">  
 
         <div class="col-md-5 jumbotron text-center" style="background-color: rgb(95, 102, 232);">
             <div id="bar"></div>
@@ -187,9 +188,7 @@ While completing these three charts presents potential visitors with a user-frie
                 This Bubble Chart proportionally depicts the bacteria count of each culture based on a specified volunteer.
                 <p>
             </div>
-        </div>
-        
-![Deliverable4C](https://github.com/chrisknox97/plotly/blob/main/PNG/overviews.png)        
+        </div>  
 
 * Additional Colors Added Via CSS
 
