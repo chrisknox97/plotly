@@ -135,7 +135,7 @@ Once again, after establishing these variables, we need only use our trace and l
         });
     }
 
-### Deluvarble 4: Customization
+### Deliverable 4: Customization
 
 While completing these three charts presents potential visitors with a user-friendly interface; the interface itself remained plain and ordinary. As a result, using our knowledge of HTML and CSS, we endeavored to customize the website in the following ways:
 
@@ -147,6 +147,8 @@ While completing these three charts presents potential visitors with a user-frie
  ![Deliverable4A](https://github.com/chrisknox97/plotly/blob/main/PNG/jumbotron.png)  
       
 * Project Overview Added
+
+<img align="right" src="https://github.com/chrisknox97/plotly/blob/main/PNG/project_overview.png">
 
         <div class="container-fluid">
             <div class="row">
@@ -161,6 +163,7 @@ While completing these three charts presents potential visitors with a user-frie
                     <p>
              </div>
           </div>
+          
    
   * Overviews of Each Graph Added
 
@@ -185,6 +188,8 @@ While completing these three charts presents potential visitors with a user-frie
                 <p>
             </div>
         </div>
+        
+![Deliverable4C](https://github.com/chrisknox97/plotly/blob/main/PNG/overviews.png)        
 
 * Additional Colors Added Via CSS
 
