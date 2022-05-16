@@ -110,6 +110,8 @@ The third deliverable required the creation of a gauge counter that would displa
         
 Once again, after establishing these variables, we need only use our trace and lyout to specify our data and titles, and Plotly to plot and display our new chart. 
 
+<img align="right" src="https://github.com/chrisknox97/plotly/blob/main/PNG/gauge.png">
+
         var gaugeData = [
         {
             value: washfreq,
@@ -135,8 +137,6 @@ Once again, after establishing these variables, we need only use our trace and l
         Plotly.newPlot("gauge", gaugeData, gaugeLayout);
         });
     }
-    
-<img align="right" src="https://github.com/chrisknox97/plotly/blob/main/PNG/gauge.png">
 
 ### Deluvarble 4: Customization
 
