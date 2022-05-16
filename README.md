@@ -113,8 +113,7 @@ Once again, after establishing these variables, we need only use our trace and l
 <img align="right" src="https://github.com/chrisknox97/plotly/blob/main/PNG/gauge.png">
 
         var gaugeData = [
-        {
-            value: washfreq,
+        {   value: washfreq,
             title: { text: '<b> Bully Button Washing Frequency <b> <br><br> Scrubs Per Week'},
             type: 'indicator',
             mode: 'gauge+number',
@@ -126,13 +125,11 @@ Once again, after establishing these variables, we need only use our trace and l
                 {range: [2, 4], color: 'orange'},
                 {range: [4, 6], color: 'yellow'},
                 {range: [6, 8], color: 'lightgreen'},
-                {range: [8, 10], color: 'green'},
-            ]}}
+                {range: [8, 10], color: 'green'},]}}
         ];
         
             var gaugeLayout = { 
-                automargin: true,  
-            };
+                automargin: true,};
 
         Plotly.newPlot("gauge", gaugeData, gaugeLayout);
         });
