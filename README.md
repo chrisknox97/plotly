@@ -144,6 +144,8 @@ While completing these three charts presents potential visitors with a user-frie
       <div class="col-xs-12 col-sm-12 col-md-12 jumbotron text-center" style="background-image: url('https://jooinn.com/images/bacteria-15.jpg');
       background-size: cover; background-position: center; color: rgb(187, 180, 227)">
       
+ ![Deliverable4A](https://github.com/chrisknox97/plotly/blob/main/PNG/jumbotron.png)  
+      
 * Project Overview Added
 
         <div class="container-fluid">
