@@ -121,9 +121,7 @@ Once again, after establishing these variables, we need only use our trace and l
                 {range: [4, 6], color: 'yellow'},
                 {range: [6, 8], color: 'lightgreen'},
                 {range: [8, 10], color: 'green'},
-            ]
-            }
-            }
+            ]}}
         ];
         
             var gaugeLayout = { 
